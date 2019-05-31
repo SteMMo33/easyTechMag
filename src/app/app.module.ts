@@ -1,16 +1,29 @@
+import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ErrorHandler, NgModule } from '@angular/core';
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
-import { SplashScreen } from '@ionic-native/splash-screen';
-import { StatusBar } from '@ionic-native/status-bar';
-
+import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+import { CartelleFotoPage } from '../pages/cartelle-foto/cartelle-foto';
+import { ImpostazioniDiRetePage } from '../pages/impostazioni-di-rete/impostazioni-di-rete';
+import { LetturaDelCodiceABarrePage } from '../pages/lettura-del-codice-abarre/lettura-del-codice-abarre';
+import { LoginPage } from '../pages/login/login';
+import { CartellaXYZ1Page } from '../pages/cartella-xyz1/cartella-xyz1';
+import { FotoXYZ1Page } from '../pages/foto-xyz1/foto-xyz1';
+import { ScattaLaFotoLivePage } from '../pages/scatta-la-foto-live/scatta-la-foto-live';
+
+
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    CartelleFotoPage,
+    ImpostazioniDiRetePage,
+    LetturaDelCodiceABarrePage,
+    LoginPage,
+    CartellaXYZ1Page,
+    FotoXYZ1Page,
+    ScattaLaFotoLivePage
   ],
   imports: [
     BrowserModule,
@@ -19,7 +32,13 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    CartelleFotoPage,
+    ImpostazioniDiRetePage,
+    LetturaDelCodiceABarrePage,
+    LoginPage,
+    CartellaXYZ1Page,
+    FotoXYZ1Page,
+    ScattaLaFotoLivePage
   ],
   providers: [
     StatusBar,
